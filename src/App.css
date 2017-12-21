@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Roboto:500|Caveat|iconicfill');
+
+body {
+  /* margin: 0; */
+  padding: 0;
+  background: #2980b9;
+  margin: 0 auto;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-title {
+  margin-top: 200px;
+  font-size: 70px;
+  font-weight: bold;
+  font-family: 'Caveat';
+}
+
+.app-main {
+  display: flex;
+}
+
+.app-main div{
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+  margin: 150px 0 0 20px;
+  padding: 30px;
+  background-color: #34495e;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.app-input input {
+  margin-top: 50px;
+  width: 300px;
+  border: none;
+  outline: none;
+  font-family: 'Roboto';
+  font-size: 26px;
+  background: #ecf0f1;
+  display: block;
+  padding: 15px 0 15px 10px;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 4px;
+  text-indent: 10px;
+}

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Clock from './Clock';
+import './App.css';
 
 class App extends Component {
   constructor(props) {
@@ -21,18 +22,18 @@ class App extends Component {
     return (
       <div className="app">
         <div className="app-title">
-          How far is, {this.state.currentDate}
+          How far is {this.state.currentDate}
         </div>
         <Clock
           currentDate={this.state.currentDate}
         />
-        <div>
+        <div className="app-input">
           <input
             placeholder="Enter a new Date"
             type="text"
-            onChange={(event) => this.setState({updatedDate: event.target.value})}
+            onChange={event => this.setState({updatedDate: event.target.value})}
+            onKeyPress={event => event.key === 'Enter' ? this.changeDay(this.state.updatedDate) : <div></div>}
           />
-          <button onClick={() => this.changeDay(this.state.updatedDate)}>Update</button>
         </div>
       </div>
     )
